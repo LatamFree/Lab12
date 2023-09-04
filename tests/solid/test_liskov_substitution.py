@@ -1,5 +1,6 @@
 import unittest
-from src.liskov_substitution.square import Square, Rectangle     
+from src.liskov_substitution.square import Square    
+from src.liskov_substitution.rectangle import Rectangle   
 
 class TestSuite(unittest.TestCase):
     def setUp(self):
@@ -15,7 +16,7 @@ class TestSuite(unittest.TestCase):
     def test_square_area(self):
         assert self.square.calculate_area() == 4
 
-        self.square.width = 3
+        self.square.side = 3
         assert self.square.calculate_area() == 9
 
     def test_scale_shapes(self):

@@ -6,5 +6,5 @@ class Presenter:
     self.db = DB("cnxstr...")
 
   def display(self):
-    data =  self.db.get_data()
+    data =  self.source.get_data()
     print(data)

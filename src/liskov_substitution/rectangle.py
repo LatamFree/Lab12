@@ -1,4 +1,6 @@
-class Rectangle:
+from .polygon import Polygon
+
+class Rectangle (Polygon):
     def __init__(self, width, height):
         self.width = width
         self.height = height

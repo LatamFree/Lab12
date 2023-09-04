@@ -1,25 +1,32 @@
-from .rectangle import Rectangle
+from .polygon import Polygon
 
-class Square(Rectangle):
+class Square(Polygon):
     def __init__(self, side):
-        super().__init__(side, side)
-        self._width = self.width
-        self._height = self.height
+        self.side = side
 
-    @property
-    def width(self):
-        return self._width
+    def calculate_area(self):
+        return self.side**2
+    
+    def scale(self, factor):
+        self.side*=factor
 
-    @width.setter
-    def width(self, value):
-        self._width = value
-        self._height = value
 
-    @property
-    def height(self):
-        return self._height
+    #     self._height = self.height
 
-    @height.setter
-    def height(self, value):
-        self._height = value
-        self._width = value
+    # @property
+    # def width(self):
+    #     return self._width
+
+    # @width.setter
+    # def width(self, value):
+    #     self._width = value
+    #     self._height = value
+
+    # @property
+    # def height(self):
+    #     return self._height
+
+    # @height.setter
+    # def height(self, value):
+    #     self._height = value
+    #     self._width = value

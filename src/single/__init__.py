@@ -1,12 +1,15 @@
 class PlaneDB():
-    pass
+    def save(self,plane):
+       return f"Saved {plane} to database"
+    # pass
 
-class Plane:
+class Plane: #Composición
   def __init__(self,model):
       self.model = model
+      self.db = PlaneDB()
   
   def __repr__(self):
       return f"Plane(model={self.model})"
 
-  def save(self):
-     return f"Saved {self} to database"
+  def save(self): #Delegación
+     return self.db.save(self)

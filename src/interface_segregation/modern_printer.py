@@ -5,7 +5,7 @@ class ModernPrinter(Printer):
         print(f"Printing {document} in color...")
 
     def fax(self, document):
-        print(f"Faxing {document}...")
+         print(f"Faxing {document}...")
 
     def scan(self, document):
-        print(f"Scanning {document}...")
+         print(f"Scanning {document}...")
