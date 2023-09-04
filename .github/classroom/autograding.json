@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "AutoGrade Recap",
+      "setup": "./tests/setup",
+      "run": "pipenv run pytest tests/recap",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    },
+    {
+      "name": "AutoGrade SOLID",
+      "setup": "./tests/setup",
+      "run": "pipenv run pytest tests/solid",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 50
+    }
+  ]
+}
